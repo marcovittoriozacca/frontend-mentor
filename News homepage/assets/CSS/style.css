@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+html{
+    font-family: 'Inter', sans-serif;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.text-soft-gray{
+    color: hsl(236, 13%, 42%);
+}
+.text-soft-orange{
+    color: hsl(35, 77%, 62%);
+}
+.very-dark-blue{
+    background-color: hsl(240, 100%, 5%);
+}
+
+
+div.offcanvas{
+    max-width: 300px;
+}
+
+nav a:hover,
+.news-font-weight:hover{
+    color: hsl(35, 77%, 62%);
+}
+nav a{
+    color: hsl(236, 13%, 42%);
+    font-size: 1.2rem;
+}
+
+.btn-soft-red{
+    background-color: hsl(5, 85%, 63%);
+}
+.btn-soft-red:hover{
+    background-color: black;
+}
+
+#web-future-title h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.news-font-weight{
+    font-weight: 700;
+    color: white;
+}
+
+
+#last-row figure{
+    height: 130px;
+    width: 100px;
+}
+#last-row figure img{
+    height: 100%;
+}
+#last-row h2,
+#last-row h4{
+    font-weight: 700;
+}
+
+#last-row h4:hover{
+    color:hsl(5, 85%, 63%);
+}
+.my-black-color:focus{
+    box-shadow: none;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+html{
+    font-family: 'Figtree', sans-serif;
+}
+.yellow-color,
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+
+.gray-color{
+    color: hsl(0, 0%, 50%);
+}
+
+.black-color{
+    color: hsl(0, 0%, 7%);
+}
+.my-font-size{
+    font-size: 0.8rem;
+}
+.foundations{
+    font-size: 1.3rem;
+}
+.my-fw-bolder{
+    font-weight:800;
+    transition: color 0.1s linear;
+}
+.foundations:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.my-learning-pad{
+    padding: 6px 10px;
+}
+.my-card{
+    box-shadow: 10px 10px black;
+}
+
+.outer-card-maxW{
+    max-width: 350px;
+}
