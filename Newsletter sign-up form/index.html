@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous'/>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <main>
+
+        <div class="container">
+            <div class="d-lg-flex align-items-center justify-content-center lg-vh-100">
+                <div class="rounded-4 p-lg-4 bg-white  ">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 order-lg-last ">
+                            <figure class="m-0 p-0">
+                                <img class="d-lg-none w-100"  src="./assets/img/images/illustration-sign-up-mobile.svg" alt="mobile-logo">
+                                <img class="d-none d-lg-block w-100" src="./assets/img/images/illustration-sign-up-desktop.svg" alt="mobile-logo">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="px-3 d-lg-flex flex-lg-column justify-content-lg-center  h-100 ">
+                                <div class="py-4">
+                                    <h1 class="fw-bolder py-1 mb-lg-5 ">Stay updated!</h1>
+                                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                                    <ul class="list-unstyled d-flex flex-column row-gap-3"></ul>
+                                </div>
+            
+                                <div class="pb-2 ">
+                                    <form action="./links/success.html">
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <label for="emailForm" class="form-label email-label fw-bold ">Email address</label>
+                                                <span id="errorMessage" class="email-label pe-3 error-message-color"></span>
+                                            </div>
+                                            <input type="email" class="form-control p-3 ps-4 noShadow" id="emailForm" aria-describedby="emailHelp" placeholder="email@company.com" required>
+                                        </div>
+                                        <button id="sendBtn" type="submit" class="border border-0  rounded-3 btn-coal fw-bold py-3 w-100">Subscribe to monthly newsletter</button>
+                                    </form>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js' integrity='sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==' crossorigin='anonymous'></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
