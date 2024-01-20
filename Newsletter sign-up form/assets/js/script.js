@@ -1,21 +1,32 @@
 //funziona che valida la mail
 function validation(email){
 
-    if(email == 0){
-        sendBtm.setAttribute('disabled', 'true');
+    // if(email == 0){
+    //     sendBtm.setAttribute('disabled', 'true');
+    //     emailForm.classList.add('formError', );
+    //     errorMessage.innerHTML = 'Valid email required'
+
+    //     const timer = setInterval(() => {
+    //         errorMessage.innerHTML = ''
+    //         emailForm.classList.remove('formError');
+    //         sendBtm.removeAttribute('disabled', 'true');
+    //         clearInterval(timer);
+    //     }, 1000);
+
+    // }else{
+    //     return flag = true;
+    // }
+
+    if (email == "" || !regEmail.test(email)) {
         emailForm.classList.add('formError', );
         errorMessage.innerHTML = 'Valid email required'
-
-        const timer = setInterval(() => {
-            errorMessage.innerHTML = ''
-            emailForm.classList.remove('formError');
-            sendBtm.removeAttribute('disabled', 'true');
-            clearInterval(timer);
-        }, 1000);
-
+        email.focus();
+        return flag = false;
     }else{
         return flag = true;
     }
+
+
 }
 
 const features = [
@@ -68,6 +79,8 @@ const sendBtm = document.getElementById('sendBtn');
 const emailForm = document.getElementById('emailForm');
 const errorMessage = document.getElementById('errorMessage');
 
+const regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
 sendBtm.addEventListener('click', function(){
 
     let flag = false;
@@ -79,6 +92,3 @@ sendBtm.addEventListener('click', function(){
         
     }
 });
-
-
-
